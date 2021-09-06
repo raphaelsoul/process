@@ -69,7 +69,7 @@ $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [B4, V4] \end{cases}$
 
 #### 直接破解/开通
 $\large{号码短验}$    
-$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A4] \end{cases}$
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A4, v4] \end{cases}$
 
 ### 联通
 #### TSG
