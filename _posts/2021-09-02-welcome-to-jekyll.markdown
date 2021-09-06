@@ -75,7 +75,6 @@ $isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A4] \end{cases}$
 #### TSG
 $\large{号码短验 \to TSG订购}$    
 $isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
-$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [] \end{cases}$
 $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BUM] \end{cases}$
 
 #### 功能二次确认+TSG
@@ -102,6 +101,12 @@ $isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [] \end{cases}$
 $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [A3, V3] \end{cases}$
 
 ### 电信
+
+#### TSG
+$\large{号码短验 \to TSG订购}$    
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BUM] \end{cases}$
+
 #### 两步短验+两步确认
 $\large{订购功能短验 \to 开通功能资费确认 \to 订购会员短验 \to 订购会员资费确认}$    
 $isLogin=\begin{cases}\text{if true} & [] \\ \text{if false} & [A2] \end{cases}$
