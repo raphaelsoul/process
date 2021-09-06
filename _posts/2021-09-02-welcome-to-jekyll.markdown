@@ -109,17 +109,17 @@ $isCrbt=\begin{cases}\text{if true} & [] \\ \text{if false} & [B2, V2] \end{case
 $isOrder=\begin{cases}\text{if true} & [] \\ \text{if false} & [A3, B3, V3] \end{cases}$
 
 #### 两步短验开通
-$\large{订购功能短验 \to 订购会员短验}$
+$\large{订购功能短验 \to 订购会员短验}$    
 $isLogin=\begin{cases}\text{if true} & [] \\ \text{if false} & [A2] \end{cases}$
 $isCrbt=\begin{cases}\text{if true} & [] \\ \text{if false} & [V2] \end{cases}$
 $isOrder=\begin{cases}\text{if true} & [] \\ \text{if false} & [A3, V3] \end{cases}$
 
 #### 双开短验+单步双确认
-$\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$
+$\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$    
 $isLogin=\begin{cases}\text{if true} & [] \\ \text{if false} & [A4] \end{cases}$
 $isOrder=\begin{cases}\text{if true} & [] \\ \text{if false} & [B4, V4] \end{cases}$
 
 #### 双开短验
-$\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$
+$\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$    
 $isLogin=\begin{cases}\text{if true} & [] \\ \text{if false} & [A4] \end{cases}$
 $isOrder=\begin{cases}\text{if true} & [] \\ \text{if false} & [V4] \end{cases}$
