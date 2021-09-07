@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/process/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/process/" rel="alternate" type="text/html" /><updated>2021-09-06T17:46:47+08:00</updated><id>http://localhost:4000/process/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-09-02T17:23:10+08:00</published><updated>2021-09-02T17:23:10+08:00</updated><id>http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html">&lt;p&gt;配置与流程&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/process/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/process/" rel="alternate" type="text/html" /><updated>2021-09-07T11:29:26+08:00</updated><id>http://localhost:4000/process/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-09-02T17:23:10+08:00</published><updated>2021-09-02T17:23:10+08:00</updated><id>http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html">&lt;p&gt;配置与流程&lt;/p&gt;
 
 &lt;p&gt;描述定义&lt;/p&gt;
 &lt;ul&gt;
@@ -98,9 +98,21 @@ $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [A3, V3] \end{cases}$
 &lt;h3 id=&quot;电信&quot;&gt;电信&lt;/h3&gt;
 
 &lt;h4 id=&quot;tsg-1&quot;&gt;TSG&lt;/h4&gt;
+&lt;h6 id=&quot;需单独开通彩铃功能&quot;&gt;需单独开通彩铃功能&lt;/h6&gt;
 &lt;p&gt;$\large{号码短验 \to TSG订购}$  &lt;br /&gt;
 $isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
 $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$&lt;/p&gt;
+
+&lt;h5 id=&quot;无需单独开通彩铃功能&quot;&gt;无需单独开通彩铃功能&lt;/h5&gt;
+&lt;p&gt;$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;彩铃确认tsg&quot;&gt;彩铃确认+TSG&lt;/h4&gt;
+&lt;p&gt;$\large{订购功能短验 \to 开通功能资费确认 \to 电信TSG}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [BTM] \end{cases}$&lt;/p&gt;
 
 &lt;h4 id=&quot;两步短验两步确认&quot;&gt;两步短验+两步确认&lt;/h4&gt;
 &lt;p&gt;$\large{订购功能短验 \to 开通功能资费确认 \to 订购会员短验 \to 订购会员资费确认}$  &lt;br /&gt;

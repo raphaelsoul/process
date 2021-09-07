@@ -21,7 +21,7 @@
 <meta name="twitter:card" content="summary">
 <meta property="twitter:title" content="Welcome to Jekyll!">
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Welcome to Jekyll!","dateModified":"2021-09-02T17:23:10+08:00","url":"http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html","datePublished":"2021-09-02T17:23:10+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html"},"description":"配置与流程","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html","headline":"Welcome to Jekyll!","dateModified":"2021-09-02T17:23:10+08:00","datePublished":"2021-09-02T17:23:10+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/process/jekyll/update/2021/09/02/welcome-to-jekyll.html"},"description":"配置与流程","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="shortcut icon" href="">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -655,7 +655,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
 
 
-    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 3 mins</span>
+    <span class="post-reading-time left-vsplit"><i class="fa fa-clock-o"></i> About 4 mins</span>
   </p></header>
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -764,9 +764,21 @@ $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [A3, V3] \end{cases}$
 <h3 id="电信">电信</h3>
 
 <h4 id="tsg-1">TSG</h4>
+<h6 id="需单独开通彩铃功能">需单独开通彩铃功能</h6>
 <p>$\large{号码短验 \to TSG订购}$  <br>
 $isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
 $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$</p>
+
+<h5 id="无需单独开通彩铃功能">无需单独开通彩铃功能</h5>
+<p>$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$</p>
+
+<h4 id="彩铃确认tsg">彩铃确认+TSG</h4>
+<p>$\large{订购功能短验 \to 开通功能资费确认 \to 电信TSG}$  <br>
+$isLogin=\begin{cases}\text{if true} &amp; [] \\ \text{if false} &amp; [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} &amp; [] \\ \text{if false} &amp; [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp; [] \\ \text{if false} &amp; [BTM] \end{cases}$</p>
 
 <h4 id="两步短验两步确认">两步短验+两步确认</h4>
 <p>$\large{订购功能短验 \to 开通功能资费确认 \to 订购会员短验 \to 订购会员资费确认}$  <br>

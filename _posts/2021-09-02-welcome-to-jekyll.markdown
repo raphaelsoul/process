@@ -103,15 +103,28 @@ $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [A3, V3] \end{cases}$
 ### 电信
 
 #### TSG
+###### 需单独开通彩铃功能
 $\large{号码短验 \to TSG订购}$    
 $isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
 $isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$
+
+##### 无需单独开通彩铃功能
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$
+
+#### 彩铃确认+TSG
+$\large{订购功能短验 \to 开通功能资费确认 \to 电信TSG}$    
+$isLogin=\begin{cases}\text{if true} & [] \\ \text{if false} & [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} & [] \\ \text{if false} & [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} & [] \\ \text{if false} & [BTM] \end{cases}$
 
 #### 两步短验+两步确认
 $\large{订购功能短验 \to 开通功能资费确认 \to 订购会员短验 \to 订购会员资费确认}$    
 $isLogin=\begin{cases}\text{if true} & [] \\ \text{if false} & [A2] \end{cases}$
 $isCrbt=\begin{cases}\text{if true} & [] \\ \text{if false} & [B2, V2] \end{cases}$
 $isOrder=\begin{cases}\text{if true} & [] \\ \text{if false} & [A3, B3, V3] \end{cases}$
+
 
 #### 两步短验开通
 $\large{订购功能短验 \to 订购会员短验}$    
