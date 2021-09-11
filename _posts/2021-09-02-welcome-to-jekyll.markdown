@@ -7,6 +7,14 @@ categories: jekyll update
 
 配置与流程
 
+$$
+\require{cases}
+\begin{cases}
+\text{if true} foo \\
+\text{if false} bar
+\end{cases}
+$$
+
 描述定义    
 * **未登录** 指号码未通过校验
 * **TSG订购** 通过外部网站的页面完成订购
