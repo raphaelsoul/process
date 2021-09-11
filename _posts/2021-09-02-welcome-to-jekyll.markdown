@@ -8,7 +8,6 @@ categories: jekyll update
 配置与流程
 
 $$
-\require{cases}
 \begin{cases}
 \text{if true} foo \\
 \text{if false} bar
