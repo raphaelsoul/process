@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="/process/feed.xml" rel="self" type="application/atom+xml" /><link href="/process/" rel="alternate" type="text/html" /><updated>2021-09-22T02:06:15+00:00</updated><id>/process/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Test mathjax</title><link href="/process/jekyll/update/2021/09/11/test-mathjax.html" rel="alternate" type="text/html" title="Test mathjax" /><published>2021-09-11T09:23:10+00:00</published><updated>2021-09-11T09:23:10+00:00</updated><id>/process/jekyll/update/2021/09/11/test-mathjax</id><content type="html" xml:base="/process/jekyll/update/2021/09/11/test-mathjax.html">&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+\text{if true} foo \\
+\text{if false} bar
+\end{cases}&lt;/script&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;require{cases}
+\begin{cases}
+\text{if true} foo \\
+\text{if false} bar
+\end{cases}&lt;/script&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"></summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="/process/jekyll/update/2021/09/02/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-09-02T09:23:10+00:00</published><updated>2021-09-02T09:23:10+00:00</updated><id>/process/jekyll/update/2021/09/02/welcome-to-jekyll</id><content type="html" xml:base="/process/jekyll/update/2021/09/02/welcome-to-jekyll.html">&lt;p&gt;配置与流程&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\begin{cases}
+\text{if true} foo \\
+\text{if false} bar
+\end{cases}&lt;/script&gt;
+
+&lt;p&gt;描述定义&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;未登录&lt;/strong&gt; 指号码未通过校验&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;TSG订购&lt;/strong&gt; 通过外部网站的页面完成订购&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;破解&lt;/strong&gt; 指不在外部网站页面上 但验证码下发与回填最终会提交给外部网站的订购方式&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;移动&quot;&gt;移动&lt;/h3&gt;
+
+&lt;h4 id=&quot;两步确认tsg&quot;&gt;两步确认+TSG&lt;/h4&gt;
+
+&lt;p&gt;$\large{号码短验 \to 开通功能资费确认 \to 订购会员资费确认 \to 移动TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B2, B3, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BCM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;会员确认tsg&quot;&gt;会员确认+TSG&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 订购会员资费确认 \to 移动TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [B3, BCM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;单步双确认tsg&quot;&gt;单步双确认+TSG&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 开通功能+会员资费确认 \to 移动TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B4, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BCM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;仅tsg&quot;&gt;仅TSG&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 移动TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BCM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;两步确认&quot;&gt;两步确认&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 开通功能资费确认 \to 订购会员资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [B3, V4] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;仅功能确认&quot;&gt;仅功能确认&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 开通功能资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [V3] \end{cases}$&lt;/p&gt;
+
+&lt;p&gt;$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [V4] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;仅会员确认&quot;&gt;仅会员确认&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 订购会员资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [B3, V4] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;单步双确认&quot;&gt;单步双确认&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 开通功能+会员资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [B4, V4] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;直接破解开通&quot;&gt;直接破解/开通&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A4, v4] \end{cases}$&lt;/p&gt;
+
+&lt;h3 id=&quot;联通&quot;&gt;联通&lt;/h3&gt;
+&lt;h4 id=&quot;tsg&quot;&gt;TSG&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BUM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;功能二次确认tsg&quot;&gt;功能二次确认+TSG&lt;/h4&gt;
+&lt;p&gt;$\large{号码短验 \to 开通功能资费确认 \to 开通功能资费二次确认 \to 联通TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B2, B21, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BUM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;短验开通功能tsg&quot;&gt;短验开通功能+TSG&lt;/h4&gt;
+&lt;p&gt;$\large{开通功能短验 \to 联通TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BUM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;会员短验-双确认&quot;&gt;会员短验 双确认&lt;/h4&gt;
+&lt;p&gt;$\large{订购会员短验 \to 订购会员资费确认 \to 开通功能资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A3] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [B3, V3] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;会员短验&quot;&gt;会员短验&lt;/h4&gt;
+&lt;p&gt;$\large{订购会员短验}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [A3, V3] \end{cases}$&lt;/p&gt;
+
+&lt;h3 id=&quot;电信&quot;&gt;电信&lt;/h3&gt;
+
+&lt;h4 id=&quot;tsg-1&quot;&gt;TSG&lt;/h4&gt;
+&lt;h6 id=&quot;需单独开通彩铃功能&quot;&gt;需单独开通彩铃功能&lt;/h6&gt;
+&lt;p&gt;$\large{号码短验 \to TSG订购}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} [] \\ \text{if false} [V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$&lt;/p&gt;
+
+&lt;h5 id=&quot;无需单独开通彩铃功能&quot;&gt;无需单独开通彩铃功能&lt;/h5&gt;
+&lt;p&gt;$isLogin=\begin{cases}\text{if true} [] \\ \text{if false} [A1] \end{cases}$
+$isOrder=\begin{cases}\text{if true} [] \\ \text{if false} [BTM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;彩铃确认tsg&quot;&gt;彩铃确认+TSG&lt;/h4&gt;
+&lt;p&gt;$\large{订购功能短验 \to 开通功能资费确认 \to 电信TSG}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [BTM] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;两步短验两步确认&quot;&gt;两步短验+两步确认&lt;/h4&gt;
+&lt;p&gt;$\large{订购功能短验 \to 开通功能资费确认 \to 订购会员短验 \to 订购会员资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [B2, V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A3, B3, V3] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;两步短验开通&quot;&gt;两步短验开通&lt;/h4&gt;
+&lt;p&gt;$\large{订购功能短验 \to 订购会员短验}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A2] \end{cases}$
+$isCrbt=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [V2] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A3, V3] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;双开短验单步双确认&quot;&gt;双开短验+单步双确认&lt;/h4&gt;
+&lt;p&gt;$\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A4] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [B4, V4] \end{cases}$&lt;/p&gt;
+
+&lt;h4 id=&quot;双开短验&quot;&gt;双开短验&lt;/h4&gt;
+&lt;p&gt;$\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$  &lt;br /&gt;
+$isLogin=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [A4] \end{cases}$
+$isOrder=\begin{cases}\text{if true} &amp;amp; [] \\ \text{if false} &amp;amp; [V4] \end{cases}$&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">配置与流程 描述定义 未登录 指号码未通过校验 TSG订购 通过外部网站的页面完成订购 破解 指不在外部网站页面上 但验证码下发与回填最终会提交给外部网站的订购方式 移动 两步确认+TSG $\large{号码短验 \to 开通功能资费确认 \to 订购会员资费确认 \to 移动TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B2, B3, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BCM] \end{cases}$ 会员确认+TSG $\large{号码短验 \to 订购会员资费确认 \to 移动TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [B3, BCM] \end{cases}$ 单步双确认+TSG $\large{号码短验 \to 开通功能+会员资费确认 \to 移动TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B4, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BCM] \end{cases}$ 仅TSG $\large{号码短验 \to 移动TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BCM] \end{cases}$ 两步确认 $\large{号码短验 \to 开通功能资费确认 \to 订购会员资费确认}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [B3, V4] \end{cases}$ 仅功能确认 $\large{号码短验 \to 开通功能资费确认}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B2, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [V3] \end{cases}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [V4] \end{cases}$ 仅会员确认 $\large{号码短验 \to 订购会员资费确认}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [B3, V4] \end{cases}$ 单步双确认 $\large{号码短验 \to 开通功能+会员资费确认}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [B4, V4] \end{cases}$ 直接破解/开通 $\large{号码短验}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A4, v4] \end{cases}$ 联通 TSG $\large{号码短验 \to TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BUM] \end{cases}$ 功能二次确认+TSG $\large{号码短验 \to 开通功能资费确认 \to 开通功能资费二次确认 \to 联通TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B2, B21, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BUM] \end{cases}$ 短验开通功能+TSG $\large{开通功能短验 \to 联通TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A2] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BUM] \end{cases}$ 会员短验 双确认 $\large{订购会员短验 \to 订购会员资费确认 \to 开通功能资费确认}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A3] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [B2, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [B3, V3] \end{cases}$ 会员短验 $\large{订购会员短验}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [A3, V3] \end{cases}$ 电信 TSG 需单独开通彩铃功能 $\large{号码短验 \to TSG订购}$ $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isCrbt=\begin{cases}\text{if true} [] \ \text{if false} [V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BTM] \end{cases}$ 无需单独开通彩铃功能 $isLogin=\begin{cases}\text{if true} [] \ \text{if false} [A1] \end{cases}$ $isOrder=\begin{cases}\text{if true} [] \ \text{if false} [BTM] \end{cases}$ 彩铃确认+TSG $\large{订购功能短验 \to 开通功能资费确认 \to 电信TSG}$ $isLogin=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A2] \end{cases}$ $isCrbt=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [B2, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [BTM] \end{cases}$ 两步短验+两步确认 $\large{订购功能短验 \to 开通功能资费确认 \to 订购会员短验 \to 订购会员资费确认}$ $isLogin=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A2] \end{cases}$ $isCrbt=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [B2, V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A3, B3, V3] \end{cases}$ 两步短验开通 $\large{订购功能短验 \to 订购会员短验}$ $isLogin=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A2] \end{cases}$ $isCrbt=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [V2] \end{cases}$ $isOrder=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A3, V3] \end{cases}$ 双开短验+单步双确认 $\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$ $isLogin=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A4] \end{cases}$ $isOrder=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [B4, V4] \end{cases}$ 双开短验 $\large{开通功能+会员短验 \to 开通彩铃+会员资费确认}$ $isLogin=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [A4] \end{cases}$ $isOrder=\begin{cases}\text{if true} &amp;amp; [] \ \text{if false} &amp;amp; [V4] \end{cases}$</summary></entry></feed>
